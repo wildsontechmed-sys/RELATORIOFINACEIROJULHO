@@ -416,7 +416,7 @@
             </div>
             <div class="report-date">
                 <strong>Período:</strong> Julho 2026<br>
-                <small>Gerado em: 05/08/2026</small>
+                <small>Gerado em: 02/07/2026</small>
             </div>
         </div>
 
@@ -458,13 +458,10 @@
     </div>
 
     <script>
-        // Carregar o logo da empresa (se o arquivo TECHMED.png existir na mesma pasta)
+        // Carregar o logo da empresa
         const logoImg = document.getElementById('logoImg');
-        logoImg.onerror = function () {
-            this.onerror = null;
-            this.style.display = 'none'; // esconde se a imagem não existir, evita ícone quebrado
-        };
-        logoImg.src = './TECHMED.png';
+        // Aqui você substituiria pelo caminho real do logo
+        logoImg.src = 'TECHMED.png';
 
         const expenses = [
             { category: 'Combustível', value: 4814.78 },
@@ -477,8 +474,7 @@
             { category: 'Equipamento de Informática', value: 25.00 }
         ];
 
-
-        const total = 12469,56;
+        const total = 12469.56;
         const maxValue = Math.max(...expenses.map(e => e.value));
 
         function getLevelClass(value) {
