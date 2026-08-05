@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Níveis de Gastos - JUNHO 2026</title>
+    <title>Níveis de Gastos - JULHO 2026</title>
     <style>
         * {
             margin: 0;
@@ -415,17 +415,17 @@
                 </div>
             </div>
             <div class="report-date">
-                <strong>Período:</strong> Junho 2026<br>
-                <small>Gerado em: 02/07/2026</small>
+                <strong>Período:</strong> Julho 2026<br>
+                <small>Gerado em: 05/08/2026</small>
             </div>
         </div>
 
-        <h1>📊 Níveis de Gastos - JUNHO 2026</h1>
+        <h1>📊 Níveis de Gastos - JULHO 2026</h1>
         <p class="subtitle">Visualização por categorias de despesas</p>
 
         <div class="total-box">
             <div class="total-label">Total Gasto no Mês</div>
-            <div class="total-value">R$ 11.038,94</div>
+            <div class="total-value">R$ 12.469,56</div>
         </div>
 
         <div class="levels-container" id="levelsContainer"></div>
@@ -467,19 +467,18 @@
         logoImg.src = './TECHMED.png';
 
         const expenses = [
-            { category: 'Combustível', value: 6047.63 },
+            { category: 'Combustível', value: 4814.78 },
             { category: 'Aluguel', value: 3202.47 },
-            { category: 'Peças e Insumos', value: 1324.31 },
-            { category: 'Supermercados', value: 137.98 },
-            { category: 'Endomarketing', value: 135.62 },
-            { category: 'Manutenção de Veículos', value: 72.00 },
-            { category: 'Serviços Postais', value: 37.53 },
-            { category: 'Transporte por Aplicativo', value: 34.50 },
-            { category: 'Alimentação', value: 28.90 },
-            { category: 'Equipamento de Informática', value: 18.00 }
+            { category: 'Peças e Insumos', value: 2825.52 },
+            { category: 'Supermercados', value: 645.13 },
+            { category: 'Material de Escrotório', value: 602.84 },
+            { category: 'Endomarketing', value: 133.00 },
+            { category: 'Serviços Postais', value: 72.82 },
+            { category: 'Equipamento de Informática', value: 25.00 }
         ];
 
-        const total = 11038.94;
+
+        const total = 12469,56;
         const maxValue = Math.max(...expenses.map(e => e.value));
 
         function getLevelClass(value) {
